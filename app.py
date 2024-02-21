@@ -44,6 +44,8 @@ def create_database(app):
 
 
 if __name__ == "__main__":
+    host = '178.128.208.215'
+    port = '5000'
     create_database(app)
-    app.run(debug=True)
+    app.run(debug=True, host=host, port=port, threaded=True)
 

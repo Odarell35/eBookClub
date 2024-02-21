@@ -1,8 +1,7 @@
 {% extends "layout.html" %}
-
 {% block body %}
 <nav>
-    <img src="eBookClub/images/Ebooklogo.png" class="logo ebook-logo">
+    <img src="../../static/styles/images/Ebooklogo.png" class="logo ebook-logo">
         <ul>
             <li><a href="#">Home</a><li>
             <li><a href="#">About</a><li>
@@ -18,15 +17,24 @@
 
 
     <div class="category-container">
-            {% for category in categories %}
-            <div class="category-box" >
-                <a href="{{ url_for('app_views.list_books', category_name=category.category_name ) }}">{{ category.category_name }}</a>
-           </div>
+        {% for category in categories %}
+            <div class="category-card">
+                <a href="{{ url_for('app_views.list_books', category_name=category.category_name ) }}">
+                    <div class="category-content">
+                        <i class="fas fa-book"></i>
+                        <h4>{{ category.category_name }}</h4>
+                        <p>{{ category.description }}</p>
+                    </div>
+                </a>
+            </div>
         {% endfor %}
-     </div>
+    </div>
 
-    <footer class="footer">
-        <p class="footer-text">&copy; 2024 EBOOKCLUB. All rights reserved.</p>
-    </footer>
+<footer>
+    <div class="footer-bottom">
+        &copy; 2024 eBookClub | All rights reserved
+    </div>
+</footer>
 
 {% endblock %}
+

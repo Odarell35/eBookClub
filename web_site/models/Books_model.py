@@ -13,3 +13,4 @@ class Books(db.Model):
     category_id = db.Column(db.Integer, db.ForeignKey('category.id'), nullable=False)
     Book_description = db.Column(db.String(1024), nullable=False)
     ref_link = db.Column(db.String(128), nullable=True)
+    img_link = db.Column(db.String(128), nullable=True)

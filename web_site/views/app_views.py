@@ -9,12 +9,16 @@ from flask_login import login_required, current_user
 
 app_views = Blueprint('app_views', __name__)
 
+@app_views.route('/', strict_slashes=False)
+def landing():
+    return render_template("landing.html")
+
 @app_views.route('/Home', strict_slashes=False)
 @login_required
 def home():
     """home page"""
     #return jsonify({"success": True, "redirect": url_for('app_views.my_account')})
-    return render_template("index.html", slide1=url_for('static', filename='styles/images/Elon Musk.jpeg'))
+    return render_template("index.html")
 
 @app_views.route('/About', strict_slashes=False)
 def about():
@@ -40,9 +44,9 @@ def list_books(category_name):
 @app_views.route('/single_book/<int:book_id>', strict_slashes=False)
 def single_book(book_id):
     book = Books.query.get(book_id)
-
+    img = book.img_link
     if book:
-        return render_template('single_book.html', book=book, book_id=book.id)
+        return render_template('single_book.html', book=book, img=img, book_id=book.id)
     else:
         return ('NOT FOUND'), 404
 

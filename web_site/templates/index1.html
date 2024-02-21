@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/favicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Home</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              eBook Club
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('app_views.about')}}"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('app_views.category')}}">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('app_views.post_review')}}"> Reviews </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h5>
+                      eBook Club
+                    </h5>
+                    <h1>
+                      Let's explore <br>
+                      through literature
+                    </h1>
+                    <p>
+                      Welcome to eBookClub, where the love for literature comes to life! Our ebook club is more than a platform.
+                    </p>
+                    <a href="">
+                      Explore 
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h5>
+                      eBook Club
+                    </h5>
+                    <h1>
+                      where the joy of reading meets<br>
+                      the thrill of discussion!
+                    </h1>
+                    <p>
+                      An online book club platform that brings book enthusiasts together to explore, review, and discuss their favorite literary works.<br>
+                      Dive into a vibrant community of readers, share your thoughts, and discover new perspectives on the books you love.
+                    </p>
+                    <a href="">
+                      Explore
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h5>
+                      eBook Club
+                    </h5>
+                    <h1>
+                      For All Your <br>
+                      Reading Needs
+                    </h1>
+                    <p>
+                      At eBookClub, we celebrate the power of books to transform lives and foster a sense of community.
+                    </p>
+                    <a href="">
+                      Explore
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn_box">
+          <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- catagory section -->
+
+  <section class="catagory_section layout_padding">
+    <div class="catagory_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            Books Categories
+          </h2>
+          <p>
+            Each category represents a specific type of literature, <br>
+            allowing readers to explore a diverse range of topics, writing styles, and storytelling approaches.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/cat1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Fiction
+                </h5>
+                <p>
+                  Encompasses imaginative and invented narratives that are not based on real events, but the authors create characters, settings, <br>
+                  and plots that exist purely in the realm of the author's imagination
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/cat2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Science Fiction
+                </h5>
+                <p>
+                  Explores imaginative and speculative concepts often rooted in scientific principles, technology, and futuristic settings.
+                  It goes beyond the constraints of current scientific knowledge, allowing authors to envision alternative worlds,<br>
+                  advanced technologies, extraterrestrial life, and other futuristic elements
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/cat3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  History
+                </h5>
+                <p>
+                  The systematic study of past events, experiences, and actions that have shaped human societies and civilizations. <br>It involves the examination and interpretation of historical records, artifacts,
+                  and evidence to understand the development of cultures, societies, and individuals over time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/cat4.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Biography
+                </h5>
+                <p>
+                  Focuses on presenting a detailed and factual account of a person's life.
+                  This genre typically delves into the subject's experiences, achievements, challenges, and significant events throughout their existence. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/cat5.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Animation
+                </h5>
+                <p>
+                  Visual representations or illustrations, often characterized by simple and exaggerated drawings, that convey humor, satire, or storytelling.
+                  known for their simplified and stylized art, making them accessible and entertaining for a wide audience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/cat6.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Fantasy
+                </h5>
+                <p>
+                  Involves imaginative and often supernatural elements, creating worlds, characters, and events that go beyond the bounds of reality.<br>
+                  In fantasy literature, authors weave tales that incorporate magical elements, mythical creatures, and fantastical settings.
+                  These stories often explore themes of heroism, adventure, and the battle between good and evil.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end catagory section -->
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About eBook Club
+              </h2>
+            </div>
+            <p>
+              An Oline book club platform that brings book enthusiasts together to explore, review, and discuss their favorite literary works.
+              Dive into a vibrant community of readers, share your thoughts, and discover new perspectives on the books you love.
+              Access an extensive collection of e-books spanning various genres. Immerse yourself in captivating stories and thought-provoking narratives.
+              Share your opinions and insights on the books you've read. Engage in meaningful discussions with fellow readers, broadening your understanding of each literary masterpiece.
+              Connect with other users through comments and threads. Whether you agree or disagree, your perspective adds value to the community dialogue.
+            </p>
+            <a href="">
+              About Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- blog section -->
+
+  <section class="blog_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          From Our Reviews blog
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/b1.jpg" alt="">
+              <h4 class="blog_date">
+                <span>
+                  Book title
+                </span>
+              </h4>
+            </div>
+            <div class="detail-box">
+              <h5>
+                user name 
+              </h5>
+              <p>
+                comment####
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/b2.jpg" alt="">
+              <h4 class="blog_date">
+                <span>
+                  book title
+                </span>
+              </h4>
+            </div>
+            <div class="detail-box">
+              <h5>
+                username
+              </h5>
+              <p>
+                comment##
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end blog section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_detail">
+            <h4>
+              About Us
+            </h4>
+            <p>
+              Vitae aut explicabo fugit facere alias distinctio, exem commodi mollitia minusem dignissimos atque asperiores incidunt vel voluptate iste
+            </p>
+            <div class="info_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +01 1234567890
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  demo@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_contact">
+            <h4>
+              Newsletter
+            </h4>
+            <form action="#">
+              <input type="text" placeholder="Enter email" />
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

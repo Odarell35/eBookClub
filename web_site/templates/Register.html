@@ -10,13 +10,12 @@
 </head>
 <body>
     <nav  id="navbar">
-        <img src="../images/Ebooklogo.png" alt="" class="ebook-logo">
+        <img src="../../static/styles/images/Ebooklogo.png" alt="" class="ebook-logo">
             <ul>
-                <li><a href="#">Home</a><li>
-                <li><a href="#">About</a><li>
-                <li><a href="#">idea</a><li>
-                <li><a href="#">My Account</a><li>
-                <li><a href="#">Logout</a><li>
+                <li><a href=" {{ url_for('app_login.login_method') }}">Home</a><li>
+                <li><a href="{{ url_for('app_views.about') }}">About</a><li>
+                <li><a href="{{ url_for('app_login.login_method') }}">My Account</a><li>
+                <li><a href="{{ url_for('app_login.login_method') }}">Login</a><li>
             </ul>
     </nav>
     <div class="registration-form">
@@ -27,7 +26,7 @@
             <input type="email" placeholder="Email" name="email"  id="email"required>
             <input type="password" placeholder="Password" name="password"  id="password"required>
             <button type=submit>Register</button>
-            <p>Already have an account? <a href="login.html">LogIn</a></p>
+            <p>Already have an account? <a href="{{ url_for('app_login.login_method') }}">LogIn</a></p>
         </form>
         <script>
             $(document).ready(function () {
