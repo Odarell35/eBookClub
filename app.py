@@ -1,3 +1,4 @@
+""" app.pt """
 from flask import Flask
 from web_site.models.User_model import User
 from web_site import db, app
