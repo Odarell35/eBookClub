@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<nav>
+    <img src="{{ url_for('static', filename='styles/images/Ebooklogo.png') }}" class="logo ebook-logo">
+        <ul>
+            <li><a href="{{ url_for('app_views.home') }}">Home</a><li>
+            <li><a href="/About">About</a><li>
+            <li><a href="/My_account">My Account</a><li>
+            <li><a href="/login">Logout</a><li>
+        </ul>
+    </nav>
+
+<div class="user-profile">
+    <div class="heading">
+        <h2>My Account</h2>
+    </div>
+    <div class="center_container">
+        <img src="{{ url_for('static', filename='styles/images/profile.jpg') }}" class="profile_photo"alt="NO PICTURE">
+        <div class="user-information">
+            <p>name: {{ user.name }}</p>
+            <p>surname: {{ user.surname }}</p>
+            <p>email: {{user.email }}</p>
+        </div>
+    </div>
+    <div class="books_review">
+        {% for rev in q %}
+            <p>Book: {{ rev.Bookname }}</p>
+            <p>Review: {{ rev.Review_text }}</p>
+            <p>Rating: {{ rev.rating }}</p>
+        {% endfor %}
+    </div>
+</div>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 EBOOKCLUB. All rights reserved.</p>
+    </footer>
+
+{% endblock %}

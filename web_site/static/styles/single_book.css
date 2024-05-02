@@ -1,0 +1,112 @@
+/* Add your styles for the single book view */
+/* Customize based on your design preferences */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.book-details {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+nav {
+    background: #4caf50;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.ebook-logo {
+    float: left;
+    width: 150px;
+    height: 70px;
+    padding-left: 10px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+    
+nav ul li {
+    float: left;
+    display: inline-block;
+    background:  #333;
+}
+    
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   line-height: 70px;
+   font-size:  18px;
+   padding: 8px 15px;
+}
+
+
+nav ul li a:hover {
+    color: #32CD32;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4caf50, 0 0 5px #32CD32;
+}
+    
+nav ul ul li a:hover {
+    colors: #32CD32;
+    box-shadow: none;
+}
+    
+nav ul ul {
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    transition: .3s;
+}
+    
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+    
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+    
+nav ul ul li a {
+    line-height: 50px;
+}
+    
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 100px;
+    
+}
+
+.footer-text{
+    color: #0c290d;
+    text-align: center;
+    margin: 0;
+}
+/* Add more styles as needed */
+

@@ -1,0 +1,123 @@
+ body{
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin-top: 70px;·
+  }
+
+.ebook-logo {
+    float: left;
+    width: 150px;
+    height: 70px;
+    padding-left: 10px;
+ }
+
+nav ul li {
+     float: left;
+     display: inline-block;
+     background:  #333;
+  }
+ ····
+ nav ul li a {
+     color: white;
+     text-decoration: none;
+     line-height: 70px;
+     font-size:  18px;
+     padding: 8px 15px;
+  }
+ 
+ nav ul li a:hover {
+     color: #32CD32;
+     border-radius: 5px;
+     box-shadow: 0 0 5px #4caf50, 0 0 5px #32CD32;
+  }
+  ····
+ nav ul ul li a:hover {
+     colors: #32CD32;
+     box-shadow: none;
+ }
+
+nav ul ul {
+     position: absolute;
+     top: 70px;
+     opacity: 0;
+     transition: .3s;
+}
+ ····
+nav ul li:hover > ul {
+     opacity: 1;
+     visibility: visible;
+}
+ ····
+nav ul ul li {
+     position: relative;
+     margin: 0px;
+     width: 150px;
+     float: none;
+     display: list-item;
+     border-bottom: 1px solid rgba(0,0,0,0.3);
+ }
+····
+ nav ul ul li a {
+     line-height: 50px;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 50px;
+}
+
+.footer-text {
+    color: #0c290d;
+    text-align: center;
+    margin: 0;
+}
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional: Center vertically within the viewport */
+}
+
+.profile_photo {
+    border-radius: 5px;
+    height: 170px;
+    width: 150px;
+    border: solid 3px grey;
+    display: block;
+    margin: auto 110px 30px;
+    margin-right: 10px;
+
+}
+
+.user-information {
+     font-size: 16px;
+     max-width: 300px;
+}
+
+.heading h2 {
+    margin-top: 7%;
+    text-transform: capitalize;
+    top: 100px;
+    margin-right: 2%;
+    text-align: center;
+}
+

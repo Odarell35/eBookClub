@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBookclubLanding Page</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/landing.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+	<div class="navbar">
+		<div class="logo">
+			<h1>eBookClub</h1>
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li><a href="{{ url_for('app_login.login_method') }}">Home</a></li>
+				<li><a href="{{ url_for('app_views.about') }}">About Us</a></li>
+				<li><a href="{{ url_for('app_views.contact_us') }}"> Contact Us</a></li>
+			</ul>
+		</div>
+		
+		<div class="signup">
+			<a href="{{ url_for('app_login.sign_up_method') }}">Sign Up</a>
+		</div>
+	</div>
+
+	<!----Body---->
+	<div class="body">
+		<div class="heading">
+			<h1>eBook Club</h1>
+			<br>
+			<p>Let's explore through literature!</p>
+				
+		</div>
+
+
+		<div class="features">
+		<h2>Key Features:<h2>
+		<p>Welcome to the enchanting world of eBookClub, where the magic of literacy unfolds <br>in every page and every interaction. Beyond being a mere platform, eBookClub is a <br>vibrant sanctuary for book lovers. Immerse yourself in the celebration of stories and <br>embark on a literary journey that goes beyond the ordinary
+		</p>
+		</div>
+
+		<div class="cta">
+			<h2>Get started Today!</h2>
+			<a href="{{ url_for('app_login.sign_up_method') }}" class="btn">Sign Up</a>
+		</div>
+		
+	</div>
+	<div class="footer">
+		<p>2024 EBOOKCLUB. All  rights reserved.</p>
+	</footer>
+
+</body>
+</html>

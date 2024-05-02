@@ -1,0 +1,238 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: snow;
+}
+
+.container{
+    color: snow;
+    background-color: green;
+    padding: 10px;
+    height: 60px; 
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+}
+
+.logo img{
+    height:150px;
+    width: 200px;
+    margin-right: 80px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  height: 10px;
+    margin-top: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.hero {
+    color: #000;
+    text-align: right;
+    padding: 20px;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.hero h1 {
+    font-size: 36px;
+    align-text: top;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    align-text: bottom;
+}
+
+.btn {
+    background-color: green;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.featured-books {
+    text-align: center;
+    padding: 50px 0;
+    margin-top:20px;
+    color: #000
+}
+
+.featured-books h2 {
+    margin-bottom: 20px;
+    color: #000
+}
+
+.book {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    margin: 0 20px;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.book p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+/*footer*/
+.footer {
+    background-color: #fff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-section.about .contact span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul {
+
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section.links ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.members {
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+.members h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.member {
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    margin: 0 20px;
+}
+
+.member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.member h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.member p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* .photo1 img {
+    float: left;
+    flex-shrink:0;
+    width: 100%;
+    height: 95%;
+    
+}*/

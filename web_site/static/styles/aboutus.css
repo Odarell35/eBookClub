@@ -1,0 +1,136 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../static/styles/images/bg.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+nav {
+    background: #4caf50;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+    
+nav ul li {
+    float: left;
+    display: inline-block;
+    background:  #333;
+}
+    
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   line-height: 70px;
+   font-size:  18px;
+   padding: 8px 15px;
+}
+
+
+nav ul li a:hover {
+    color: #32CD32;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #4caf50, 0 0 5px #32CD32;
+}
+
+nav ul ul li a:hover {
+    colors: #32CD32;
+    box-shadow: none;
+}
+    
+nav ul ul {
+    position: absolute;
+    top: 70px;
+    opacity: 0;
+    transition: .3s;
+}
+    
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+    
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+    
+nav ul ul li a {
+    line-height: 50px;
+}
+    
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+.logo {
+    width: 150px; /* Adjust the width as needed */
+    height: 100px;
+}
+
+.AboutUs {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: justify;
+    color: white;
+}
+
+.AboutUs h1 {
+    font-size: 5em;
+    margin-top: 0;
+    text-align: center;
+}
+
+.AboutUs p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+
+/* Adjustment for the margin for the heading */
+.AboutUs h1 {
+    font-size: 5em;
+    margin-top: 100px;
+}
+
+.footer{
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 25px;
+
+ }
+
+.footer-text{
+    color: #0c290d;
+    text-align: center;
+    margin: 0;
+}
